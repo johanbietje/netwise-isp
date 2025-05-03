@@ -450,10 +450,10 @@ download_application() {
       cd /tmp
       
       # First try personal repository
-      if git clone https://github.com/johanbietje/netwise-isp.git netwise-temp 2>/dev/null; then
+      if git clone https://github.com/johanbietje/netwise-isp 2>/dev/null; then
         progress "Downloaded from johanbietje/netwise-isp repository."
       # Then try official repository
-      elif git clone https://github.com/netwise-isp/netwise.git netwise-temp 2>/dev/null; then
+      elif git clone https://github.com/johanbietje/netwise-isp netwise-temp 2>/dev/null; then
         progress "Downloaded from netwise-isp/netwise repository."
       else
         warning "Could not download from GitHub. You may need to manually copy the application files."
