@@ -188,7 +188,7 @@ download_application() {
   
   # Clone the repository or download the release
   cd /tmp
-  git clone https://github.com/netwise-isp/netwise.git netwise-temp
+  git clone https://github.com/johanbietje/netwise-isp
   
   # Copy files to installation directory
   cp -r /tmp/netwise-temp/* "$INSTALL_DIR/"
